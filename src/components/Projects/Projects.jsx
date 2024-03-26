@@ -29,7 +29,9 @@ export const Projects = () => {
                 <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5}>
                   <div className="grid-item">
                     <h1>CineVerse</h1>
-                    <img src={cineverse} alt="" height='395' width='650'/>
+                    <div className="projectImage">
+                        <img src={cineverse} alt=""/>
+                    </div>
                     <h3>Full-stack movie review web-app</h3>
                     <h4>React.js • PostgreSQL • HTML • CSS</h4>
                   </div>
@@ -38,7 +40,9 @@ export const Projects = () => {
                 <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5}>
                   <div className="grid-item">
                     <h1>Asteroid Dodger (SystemsHacks)</h1>
-                    <img src={asteroid} alt="" height='395' width='650'/>
+                    <div className="projectImage">
+                        <img src={asteroid} alt="" height='395' width='650'/>
+                    </div>
                     <h3>2.5D web game with physics engine</h3>
                     <h4>React.js • Three.js • HTML • Tailwind</h4>
                   </div>
@@ -50,7 +54,9 @@ export const Projects = () => {
                 <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5}>
                   <div className="grid-item">
                     <h1>FitFolio</h1>
-                    <img src={fitfolio} alt="" height='395' width='650'/>
+                    <div className="projectImage">
+                        <img src={fitfolio} alt="" height='395' width='650'/>
+                    </div>
                     <h3>Full-stack running & weightlifting tracker web-app</h3>
                     <h4>JavaScript • MySQL • HTML • CSS</h4>
                   </div>
@@ -59,7 +65,9 @@ export const Projects = () => {
                 <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5}>
                   <div className="grid-item">
                     <h1>Word Wizardy</h1>
-                    <img src={wordwizardry} alt="" height='395' width='650'/>
+                    <div className="projectImage">
+                        <img src={wordwizardry} alt="" height='395' width='650'/>
+                    </div>
                     <h3>Python Tkinter typing speed test</h3>
                     <h4>Python</h4>
                   </div>

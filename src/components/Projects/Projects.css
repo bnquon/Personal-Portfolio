@@ -15,6 +15,7 @@
 }
 
 #gridContainer {
+    border: 1px solid blue;
     display: flex;
     justify-content: center;
     gap: 10vw;
@@ -23,12 +24,15 @@
 
 #gridContainer > #leftGrid,
 #gridContainer > #rightGrid {
+    border: 1px solid green;
+    width: fit-content;
     display: grid;
     gap: clamp(2rem, 10vh, 10rem);
 }
 
 .grid-item {
     padding: 0.5rem 1rem;
+    max-width: 35vw;
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
 }
 
@@ -53,4 +57,9 @@
 .grid-item > h4 {
     font-size: clamp(0.8rem, 0.85vw, 1.5rem);
     font-weight: 300;
+}
+
+.projectImage img {
+    width: 100%;
+    height: auto;
 }
