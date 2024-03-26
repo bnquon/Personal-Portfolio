@@ -40,7 +40,7 @@ export const Projects = () => {
                     <h1>Asteroid Dodger (SystemsHacks)</h1>
                     <img src={asteroid} alt="" height='395' width='650'/>
                     <h3>2.5D web game with physics engine</h3>
-                    <h4>React.js • three.js • HTML • Tailwind</h4>
+                    <h4>React.js • Three.js • HTML • Tailwind</h4>
                   </div>
                 </Tilt>
             </div>
