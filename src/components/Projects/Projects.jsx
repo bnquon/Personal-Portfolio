@@ -41,7 +41,7 @@ export const Projects = () => {
                   <div className="grid-item">
                     <h1>Asteroid Dodger (SystemsHacks)</h1>
                     <div className="projectImage">
-                        <img src={asteroid} alt="" height='395' width='650'/>
+                        <img src={asteroid} alt=""/>
                     </div>
                     <h3>2.5D web game with physics engine</h3>
                     <h4>React.js • Three.js • HTML • Tailwind</h4>
@@ -55,7 +55,7 @@ export const Projects = () => {
                   <div className="grid-item">
                     <h1>FitFolio</h1>
                     <div className="projectImage">
-                        <img src={fitfolio} alt="" height='395' width='650'/>
+                        <img src={fitfolio} alt=""/>
                     </div>
                     <h3>Full-stack running & weightlifting tracker web-app</h3>
                     <h4>JavaScript • MySQL • HTML • CSS</h4>
@@ -66,7 +66,7 @@ export const Projects = () => {
                   <div className="grid-item">
                     <h1>Word Wizardy</h1>
                     <div className="projectImage">
-                        <img src={wordwizardry} alt="" height='395' width='650'/>
+                        <img src={wordwizardry} alt=""/>
                     </div>
                     <h3>Python Tkinter typing speed test</h3>
                     <h4>Python</h4>
