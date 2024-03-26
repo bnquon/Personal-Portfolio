@@ -1,7 +1,7 @@
 #projects {
     position: relative;
     width: 100%;
-    margin: 5vh 0;
+    margin: 8vh 0;
 }
 
 #projectsTitle {
@@ -15,7 +15,6 @@
 }
 
 #gridContainer {
-    margin: 2vh 0;
     display: flex;
     justify-content: center;
     gap: 10vw;
@@ -24,12 +23,17 @@
 
 #gridContainer > #leftGrid,
 #gridContainer > #rightGrid {
+    border: 1px solid red;
     display: grid;
-    gap: 6vh;
+    gap: clamp(2rem, 10vh, 10rem);
 }
 
 .grid-item > * {
     margin: 0;
+}
+
+.grid-item > img {
+    border: 2px solid black;
 }
 
 .grid-item > h1 {
