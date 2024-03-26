@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useInView, animated } from '@react-spring/web'
 import './Contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,21 +9,18 @@ export const Contact = () => {
   const [ref, springs] = useInView(
     () => ({
       from: {
-        y: -50,
         opacity: 0,
       },
       to: {
-        y: 0,
         opacity: 1,
       },
     }),
     {
       threshold: 0,
-      once: true,
     }
   );
 
-  const [result, setResult] = React.useState("");
+  const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -40,7 +37,7 @@ export const Contact = () => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setResult("Form Submitted Successfully ✅");
       event.target.reset();
     } else {
       console.log("Error", data);
@@ -56,14 +53,14 @@ export const Contact = () => {
       </div>
       
       <form id='contactForm' onSubmit={onSubmit}>
-          <input type="text" name="name" placeholder='Name' required/>
-          <input type="email" name="email" placeholder='Email' required/>
-          <textarea name="message" placeholder='Message' required></textarea>
+        <input type="text" name="name" placeholder='Name' required/>
+        <input type="email" name="email" placeholder='Email' required/>
+        <textarea name="message" placeholder='Message' required></textarea>
 
-          <button type="submit">SUBMIT</button>
+        <button type="submit">SUBMIT</button>
 
+        {result ? <span>{result}</span> : null}
       </form>
-      <span>{result}</span>
 
       <div id="footer">
         <FontAwesomeIcon icon={faGithub}/>

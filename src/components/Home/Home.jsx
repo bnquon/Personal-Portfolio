@@ -27,7 +27,7 @@ export const Home = () => {
         <animated.div id="navbarContainer" ref={ref} style={springs}>
             <div className="progressScroll"></div>
             <ul>
-                <li>HOME</li>
+                <li>ABOUT</li>
                 <li>PROJECTS</li>
                 <li id="middleNav">BRANDON</li>
                 <li>UPCOMING</li>
@@ -38,7 +38,7 @@ export const Home = () => {
 
         <animated.div id="intro" ref={ref} style={springs}>
             <h1>BRANDON <br />QUON</h1><br />
-            <h3>I'm Brandon, a computer science student based in British Columbia.</h3>
+            <h3>I'm Brandon, an asipiring software developer based in British Columbia.</h3>
         </animated.div>
 
     </div>

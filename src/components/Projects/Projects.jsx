@@ -9,7 +9,7 @@ export const Projects = () => {
     });
 
     const rightParallax = useParallax({
-        translateY: [10, -5],
+        translateY: [10, -2.5],
     });
 
   return (

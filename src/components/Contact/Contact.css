@@ -1,6 +1,6 @@
 #contact {
     position: relative;
-    margin-top: 6vh;
+    margin-top: 8vh;
     width: 100%;
     transition: 250ms;
 }
@@ -18,7 +18,7 @@
 #contactForm {
     position: relative;
     width: 32vw;
-    margin: 3vh auto;
+    margin: 4vh auto;
     display: flex;
     flex-direction: column;
     gap: clamp(0.5rem, 4vh, 4rem);
@@ -37,6 +37,7 @@
 }
 
 #contactForm > textarea {
+    font-family: "Rubik", sans-serif;
     resize: vertical;
     border: 1px solid #d5d5d5;
     outline: 0.5px solid black;
@@ -63,8 +64,13 @@
     background-color: hsl(0, 0%, 3%, 90%);
 }
 
+#contactForm > span {
+    font-size: clamp(0.5rem, 0.85vw, 2rem);
+    margin: 0 auto;
+}
+
 #footer {
-    margin-top: 5vh;
+    margin-top: 10vh;
     position: relative;
     display: flex;
     justify-content: center;
