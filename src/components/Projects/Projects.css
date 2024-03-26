@@ -15,7 +15,6 @@
 }
 
 #gridContainer {
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
     gap: 10vw;
@@ -24,7 +23,6 @@
 
 #gridContainer > #leftGrid,
 #gridContainer > #rightGrid {
-    border: 1px solid green;
     width: fit-content;
     display: grid;
     gap: clamp(2rem, 10vh, 10rem);
@@ -38,10 +36,6 @@
 
 .grid-item > * {
     margin: 0;
-}
-
-.grid-item > img {
-    border: 2px solid black;
 }
 
 .grid-item > h1 {
@@ -61,6 +55,35 @@
 
 .projectImage img {
     width: 100%;
-    height: auto;
+    border: 2px solid black;
     aspect-ratio: 1.8;
+}
+
+.projectImage:hover {
+    cursor: pointer;
+}
+
+.projectImage > .linkIndicator {
+    position: absolute;
+    z-index: 9999999999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 250ms;
+}
+
+.projectImage:hover .linkIndicator {
+    opacity: 1;
+}
+
+.linkIndicator > #rotated {
+    transform: rotate(45deg);
 }
