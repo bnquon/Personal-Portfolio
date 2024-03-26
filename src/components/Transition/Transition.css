@@ -1,0 +1,31 @@
+#transition {
+    position: relative;
+    margin: 20vh 0 15vh;
+    width: 100%;
+}
+
+#transitionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#top,
+#bottom {
+    width: 100%;
+    white-space: nowrap; 
+}
+
+#top > h1,
+#bottom > h1 {
+    font-size: clamp(4vw, 6vw, 6rem);
+    font-weight: 500;
+    margin: 0;
+}
+
+#top {
+    color: #d5d5d5;
+}
+
+#bottom {
+    margin-top: -1%;
+}

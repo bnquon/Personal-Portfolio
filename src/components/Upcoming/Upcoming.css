@@ -1,0 +1,29 @@
+#upcoming {
+    position: relative;
+    width: 100%;
+}
+
+#upcomingTitle {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+#upcomingTitle > h1 {
+    margin: 0;
+    font-size: clamp(4vw, 7vw, 20rem);
+    font-weight: 400;
+}
+
+#upcomingGrid {
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10vh;
+    width: 60vw;
+    transition: 250ms linear;
+}
+
+#upcomingGrid > .upcomingGrid-item > p {
+    font-size: clamp(0.75rem, 1vw, 5rem);
+    font-weight: 200;
+}

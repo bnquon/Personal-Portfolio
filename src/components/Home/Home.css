@@ -1,0 +1,96 @@
+#home {
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+    overflow-x: hidden;
+}
+
+#navbarContainer {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 999;
+    background-color: white;
+    transition: 150ms;
+}
+
+#navbarContainer hr {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    left: 2.5%;
+    height: 1px;
+    border: none;
+    margin: 0;
+    background-color: #070707;
+}
+
+#navbarContainer > .progressScroll {
+    height: 0.35%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: #070707;
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll-progress linear;
+    animation-timeline: scroll();
+}
+
+@keyframes scroll-progress {
+    to {scale: 1 1;}
+}
+
+#navbarContainer > ul {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    align-items: end;
+    padding: 0;
+    gap: clamp(0.25rem, 6vw, 6.5vw);
+    margin: 2vh auto;
+}
+
+#navbarContainer > ul > li {
+    list-style: none;
+    font-size: clamp(1rem, 0.75vw, 4rem);
+}
+
+#navbarContainer > ul > #middleNav {
+    font-size: clamp(1.2rem, 1.25vw, 4rem);
+    margin-bottom: -0.25%;
+}
+
+#navbarContainer > ul > li:hover {
+    cursor: pointer;
+}
+
+#intro {
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    margin: 25vh auto 0;
+    transition: 300ms linear;
+}
+
+#intro > * {
+    margin: 0;
+}
+
+#intro h1 {
+    font-size: clamp(4vw, 12vw, 20rem);
+    font-weight: 400;
+    line-height: 80%;
+}
+
+#intro h3 {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    font-size: clamp(1rem, 1.25vw, 4rem);
+    font-weight: 300;
+    line-height: 175%;
+}

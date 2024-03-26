@@ -1,0 +1,78 @@
+#contact {
+    position: relative;
+    margin-top: 6vh;
+    width: 100%;
+    transition: 250ms;
+}
+
+#contactTitle {
+    text-align: center;
+}
+
+#contactTitle > h1 {
+    margin: 0;
+    font-size: clamp(4vw, 6vw, 20rem);
+    font-weight: 400;
+}
+
+#contactForm {
+    position: relative;
+    width: 32vw;
+    margin: 3vh auto;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.5rem, 4vh, 4rem);
+    border: 1px solid #e5e5e5;
+    background-color: #e5e5e5;
+    padding: clamp(0.5rem, 4vh, 4rem);
+}
+
+#contactForm > input {
+    border: 1px solid #d5d5d5;
+    outline: 0.5px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: clamp(1rem, 1vw, 3rem);
+    padding: clamp(0.1rem, 1vw, 2rem);
+    transition: 200ms;
+}
+
+#contactForm > textarea {
+    resize: vertical;
+    border: 1px solid #d5d5d5;
+    outline: 0.5px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: clamp(1rem, 1vw, 3rem);
+    padding: clamp(0.1rem, 1vw, 2rem);
+}
+
+#contactForm > input:focus, 
+#contactForm > textarea:focus {
+    background-color: #f0f0f0;
+}
+
+#contactForm > button {
+    background-color: #070707;
+    color: white;
+    font-size: clamp(1rem, 1vw, 3rem);
+    padding: clamp(0.1rem, 0.75vw, 2rem);
+    transition: 100ms;
+}
+
+#contactForm > button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 3%, 90%);
+}
+
+#footer {
+    margin-top: 5vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(3vw, 6vw, 8vw);
+    width: 100%;
+    background-color: #070707;
+    height: clamp(5vh, 8vh, 8vh);
+    font-size: clamp(3vh, 6vh, 6vh);
+    color: white;
+}

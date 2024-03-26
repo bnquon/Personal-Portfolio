@@ -1,0 +1,45 @@
+#projects {
+    position: relative;
+    width: 100%;
+    margin: 5vh 0;
+}
+
+#projectsTitle {
+    text-align: center;
+}
+
+#projectsTitle > h1 {
+    margin: 0;
+    font-size: clamp(4vw, 7vw, 20rem);
+    font-weight: 400;
+}
+
+#gridContainer {
+    margin: 2vh 0;
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    padding: 2vh 0;
+}
+
+#gridContainer > #leftGrid,
+#gridContainer > #rightGrid {
+    display: grid;
+    gap: 6vh;
+}
+
+.grid-item > * {
+    margin: 0;
+}
+
+.grid-item > h1 {
+    font-weight: 550;
+}
+
+.grid-item > h3 {
+    font-weight: 450;
+}
+
+.grid-item > h4 {
+    font-weight: 300;
+}
