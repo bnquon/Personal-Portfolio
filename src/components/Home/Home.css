@@ -94,3 +94,20 @@
     font-weight: 300;
     line-height: 175%;
 }
+
+#scrollTip {
+    transition: 350ms;
+    margin: 3vh auto 0;
+    width: fit-content;
+    text-align: center;
+    font-size: clamp(1rem, 1vw, 4rem);
+}
+
+#scrollTip > h4 {
+    font-style: italic;
+    font-weight: 1;
+}
+
+#scrollTip > * {
+    margin: 0.5rem 0 0;
+}

@@ -16,7 +16,7 @@ export const Contact = () => {
       },
     }),
     {
-      threshold: 0,
+      threshold: 0.25,
     }
   );
 
