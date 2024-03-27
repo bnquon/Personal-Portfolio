@@ -103,7 +103,7 @@
 
 @media screen and (max-width: 600px) {
     #intro {
-        margin: 15vh auto 0;
+        margin: 10vh auto 0;
     }
 
     #intro h1 {
@@ -132,7 +132,9 @@
     #navbarContainer {
         background-color: lightblue;
         height: 5vh;
-        width: 100vw;
+        max-width: 100vw;
+        display: flex;
+        justify-content: center;
     }
 
     #navbarContainer > ul > li {
