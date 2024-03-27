@@ -18,9 +18,22 @@
     margin: 5vh auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10vh;
+    gap: 8vh;
     width: 60vw;
     transition: 250ms linear;
+    border: 1px solid black;
+}
+
+#upcomingGrid > .upcomingGrid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+#upcomingGrid > .upcomingGrid-item > * {
+    margin: 0.5rem;
 }
 
 #upcomingGrid > .upcomingGrid-item > h2 {

@@ -17,7 +17,7 @@
 }
 
 #navbarContainer > .progressScroll {
-    height: 1%;
+    height: 3%;
     position: absolute;
     bottom: 0;
     z-index: 2;
