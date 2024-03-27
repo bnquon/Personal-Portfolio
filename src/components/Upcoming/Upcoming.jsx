@@ -28,18 +28,13 @@ export const Upcoming = () => {
         <animated.div id="upcomingGrid" ref={ref} style={springs}>
 
           <div className="upcomingGrid-item">
-            <h2>TITLE</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed magna et ligula sagittis tristique non eu est. Cras fringilla.</p>
+            <h2>Java Maven Game</h2>
+            <p>2D maze game created with Maven and JUnit testing.</p>
           </div>
           
           <div className="upcomingGrid-item">
-            <h2>TITLE</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed magna et ligula sagittis tristique non eu est. Cras fringilla.</p>
-          </div>
-
-          <div className="upcomingGrid-item">
-            <h2>TITLE</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed magna et ligula sagittis tristique non eu est. Cras fringilla.</p>
+            <h2>This Website</h2>
+            <p>I will be updating this website as needed and adding new features.</p>
           </div>
           
         </animated.div>

@@ -23,6 +23,10 @@
     transition: 250ms linear;
 }
 
+#upcomingGrid > .upcomingGrid-item > h2 {
+    font-size: clamp(1rem, 1.25vw, 3rem);
+}
+
 #upcomingGrid > .upcomingGrid-item > p {
     font-size: clamp(0.75rem, 1vw, 5rem);
     font-weight: 200;
