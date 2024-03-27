@@ -83,7 +83,8 @@ a {
     width: 8%;
     aspect-ratio: 1;
     border-radius: 50%;
-    background-color: var(--bg-color);
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,8 +94,8 @@ a {
 }
 
 .projectImage > .whiteBg {
-    background-color: var(--font-color);
-    color: var(--bg-color);
+    background-color: white;
+    color: black;
 }
 
 
