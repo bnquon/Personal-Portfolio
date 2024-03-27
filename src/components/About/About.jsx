@@ -6,10 +6,6 @@ export const About = () => {
   return (
     <div id='about'>
 
-        <div id="aboutTitle">
-            <h1>ABOUT</h1>
-        </div>
-
         <div id="aboutContainer">
 
             <div id="pfp">
@@ -17,6 +13,7 @@ export const About = () => {
             </div>
 
             <div id="bio">
+                <h1>ABOUT</h1>
                 <span>
                     Hello there! I'm Brandon Quon, a second-year student at Simon Fraser University studying computer science. 
                     I'm on an exciting journey fueled by my passion for lifelong learning and my insatiable curiosity about all things related to 

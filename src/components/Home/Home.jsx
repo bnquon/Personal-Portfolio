@@ -44,7 +44,6 @@ export const Home = () => {
     <div id="home">
 
       <animated.div id="navbarContainer" ref={ref} style={springs}>
-        <div className="progressScroll"></div>
         <ul>
             <li>ABOUT</li>
             <li>PROJECTS</li>
@@ -52,7 +51,7 @@ export const Home = () => {
             <li>UPCOMING</li>
             <li>CONTACT</li>
         </ul>
-        <hr />
+        <div className="progressScroll"></div>
       </animated.div>       
 
       <animated.div id="intro" ref={ref} style={springs}>

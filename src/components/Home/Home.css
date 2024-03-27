@@ -16,21 +16,10 @@
     transition: 150ms;
 }
 
-#navbarContainer hr {
+#navbarContainer > .progressScroll {
+    height: 1%;
     position: absolute;
     bottom: 0;
-    width: 95%;
-    left: 2.5%;
-    height: 1px;
-    border: none;
-    margin: 0;
-    background-color: #070707;
-}
-
-#navbarContainer > .progressScroll {
-    height: 0.35%;
-    position: fixed;
-    top: 0;
     z-index: 2;
     background-color: #070707;
     width: 100%;
@@ -72,7 +61,7 @@
     position: relative;
     width: fit-content;
     text-align: center;
-    margin: 25vh auto 0;
+    margin: 27.5vh auto 0;
     transition: 300ms linear;
 }
 

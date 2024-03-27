@@ -1,17 +1,7 @@
 #about {
     position: relative;
-    margin-top: 5vh;
+    margin-top: 10vh;
     width: 100%;
-}
-
-#aboutTitle {
-    text-align: center;
-}
-
-#aboutTitle > h1 {
-    margin: 0;
-    font-size: clamp(4vw, 7vw, 20rem);
-    font-weight: 400;
 }
 
 #aboutContainer {
@@ -28,7 +18,7 @@
 #aboutContainer > #pfp {
     margin: auto 0;
     max-width: 22vw;
-    min-width: 12vw;
+    min-width: 175px;
 }
 
 #aboutContainer > #pfp img {
@@ -39,7 +29,14 @@
 
 #aboutContainer > #bio {
     width: 35%;
-    font-size: clamp(0.75rem, 1vw, 4rem);
+}
+
+#aboutContainer > #bio > h1 {
+    font-size: clamp(1.25rem, 2.75vw, 4rem);
+}
+
+#aboutContainer > #bio > span{
+    font-size: clamp(0.75rem, 1vw, 2rem);
     font-weight: 400;
     line-height: 150%;
 }

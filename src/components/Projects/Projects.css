@@ -28,6 +28,9 @@
     gap: clamp(2rem, 10vh, 10rem);
 }
 
+a {
+    all: unset;
+}
 .grid-item {
     padding: 0.5rem 1rem;
     max-width: 35vw;
@@ -53,10 +56,17 @@
     font-weight: 300;
 }
 
-.projectImage img {
+.projectImage {
+    position: relative;
     width: 100%;
+}
+
+.projectImage img {
+    position: relative;
+    max-width: 100%;
     border: 2px solid black;
-    aspect-ratio: 1.8;
+    /* max-height: 40px; */
+    aspect-ratio: 1.75;
 }
 
 .projectImage:hover {
@@ -69,16 +79,22 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
+    width: 8%;
+    aspect-ratio: 1;
+    border-radius: 50%;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
     transition: 250ms;
+    font-size: clamp(0.5rem, 1.25vw, 2rem);
 }
+
+.projectImage > .whiteBg {
+    background-color: white;
+}
+
 
 .projectImage:hover .linkIndicator {
     opacity: 1;

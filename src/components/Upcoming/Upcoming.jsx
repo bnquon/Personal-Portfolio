@@ -22,7 +22,7 @@ export const Upcoming = () => {
   return (
     <div id='upcoming'>
         <div id="upcomingTitle">
-            <h1>WORKS IN PROGRESS</h1>
+            <h1>FUTURE PROJECTS</h1>
         </div>
 
         <animated.div id="upcomingGrid" ref={ref} style={springs}>
