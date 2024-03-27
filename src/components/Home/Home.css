@@ -138,9 +138,10 @@
 
     #navbarContainer > .progressScroll {
         height: 0.25vh;
-        animation: scroll-progress linear;
-        -webkit-animation: scroll-progress linear;
-        -webkit-animation-timeline: scroll();
+        animation: none;
+        -webkit-animation: none;
+        scale: 1 1;
+        width: 100vw;
     }
 
     #navbarContainer > ul > li {
