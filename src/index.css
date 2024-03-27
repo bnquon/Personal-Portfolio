@@ -18,7 +18,7 @@ body {
   color: var(--font-color);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   body {
       overflow-x: hidden; /* Hide horizontal overflow */
   }

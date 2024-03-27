@@ -44,7 +44,7 @@
     font-weight: 200;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     #upcoming {
         padding-top: 4vh;
     }

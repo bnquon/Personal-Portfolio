@@ -107,7 +107,7 @@
     margin: 0.5rem 0 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     #intro {
         margin: 10vh auto 0;
     }
