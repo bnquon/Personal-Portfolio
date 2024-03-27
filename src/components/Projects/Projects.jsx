@@ -10,13 +10,13 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import './Projects.css';
 
 export const Projects = () => {
-  const isMobile = window.innerWidth <= 600; // Define mobile screen size here
+  const isMobile = window.innerWidth <= 600;
   const parallax = useParallax({
-    translateY: isMobile ? [0, 0] : [0, 7.5], // Conditionally set parallax effect
+    translateY: isMobile ? [0, 0] : [0, 7.5],
   });
 
   const rightParallax = useParallax({
-    translateY: isMobile ? [0, 0] : [10, 0], // Conditionally set parallax effect
+    translateY: isMobile ? [0, 0] : [10, 0],
   });
 
   return (

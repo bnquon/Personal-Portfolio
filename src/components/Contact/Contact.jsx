@@ -6,6 +6,8 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export const Contact = () => {
   
+  const isMobile = window.innerWidth <= 600;
+
   const [ref, springs] = useInView(
     () => ({
       from: {
@@ -55,7 +57,7 @@ export const Contact = () => {
       <form id='contactForm' onSubmit={onSubmit}>
         <input type="text" name="name" placeholder='Name' required/>
         <input type="email" name="email" placeholder='Email' required/>
-        <textarea name="message" placeholder='Message' required rows={5}></textarea>
+        <textarea name="message" placeholder='Message' required rows={isMobile ? 3: 5}></textarea>
 
         <button type="submit">SUBMIT</button>
 
