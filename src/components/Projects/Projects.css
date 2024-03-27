@@ -65,7 +65,7 @@ a {
 .projectImage img {
     position: relative;
     max-width: 100%;
-    border: 2px solid black;
+    border: 2px solid var(--font-color);
     /* max-height: 40px; */
     aspect-ratio: 1.75;
 }
@@ -83,7 +83,7 @@ a {
     width: 8%;
     aspect-ratio: 1;
     border-radius: 50%;
-    background-color: black;
+    background-color: var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +93,8 @@ a {
 }
 
 .projectImage > .whiteBg {
-    background-color: white;
+    background-color: var(--font-color);
+    color: var(--bg-color);
 }
 
 

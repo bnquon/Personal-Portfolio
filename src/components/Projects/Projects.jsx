@@ -37,7 +37,7 @@ export const Projects = () => {
                       <h1>CineVerse</h1>
                       <div className="projectImage">
                         <div className="linkIndicator">
-                          <FontAwesomeIcon icon={faArrowUp} style={{color: "#ffffff",}} id='rotated' />
+                          <FontAwesomeIcon icon={faArrowUp} id='rotated' />
                         </div>
 
                         <img src={cineverse} alt=""/>
@@ -54,7 +54,7 @@ export const Projects = () => {
                       <h1>Asteroid Dodger (SystemsHacks)</h1>
                       <div className="projectImage">
                         <div className="linkIndicator whiteBg">
-                          <FontAwesomeIcon icon={faArrowUp} style={{color: "#000000",}} id='rotated' />
+                          <FontAwesomeIcon icon={faArrowUp} id='rotated' />
                         </div>
 
                         <img src={asteroid} alt=""/>
@@ -74,7 +74,7 @@ export const Projects = () => {
                       <h1>FitFolio</h1>
                       <div className="projectImage">
                         <div className="linkIndicator">
-                          <FontAwesomeIcon icon={faArrowUp} style={{color: "#ffffff",}} id='rotated' />
+                          <FontAwesomeIcon icon={faArrowUp} id='rotated' />
                         </div>
                         <img src={fitfolio} alt=""/>
                       </div>
@@ -90,7 +90,7 @@ export const Projects = () => {
                       <h1>Word Wizardry</h1>
                       <div className="projectImage">
                         <div className="linkIndicator">
-                          <FontAwesomeIcon icon={faArrowUp} style={{color: "#ffffff",}} id='rotated' />
+                          <FontAwesomeIcon icon={faArrowUp} id='rotated' />
                         </div>
                         <img src={wordwizardry} alt=""/>
                       </div>

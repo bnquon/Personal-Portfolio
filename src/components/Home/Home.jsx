@@ -2,11 +2,20 @@ import React, { useState, useEffect } from 'react'
 import { useInView, animated } from '@react-spring/web'
 import './Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleDown } from '@fortawesome/free-regular-svg-icons'
+import { faCircleDown, faMoon, faSun } from '@fortawesome/free-regular-svg-icons'
 
 export const Home = () => {
   const [atTop, setAtTop] = useState(true);
 
+  const [curTheme, setTheme] = useState(true);
+
+  const updateTheme = () => {
+    setTheme(!curTheme);
+    if (curTheme) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else document.documentElement.setAttribute('data-theme', 'light');
+  }
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY === 0) {
@@ -61,6 +70,9 @@ export const Home = () => {
             <li onClick={() => scroll('upcoming')}>UPCOMING</li>
             <li onClick={() => scroll('contact')}>CONTACT</li>
         </ul>
+        
+        <FontAwesomeIcon id='themePicker' icon={curTheme ? faMoon : faSun} onClick={() => updateTheme()}/>
+
         <div className="progressScroll"></div>
       </animated.div>       
 

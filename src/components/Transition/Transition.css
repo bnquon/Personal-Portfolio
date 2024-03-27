@@ -28,6 +28,7 @@
 
 #bottom {
     margin-top: -1.5%;
+    color: var(--font-color);
 }
 
 @media screen and (max-width: 600px) {
