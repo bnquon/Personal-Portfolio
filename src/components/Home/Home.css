@@ -136,6 +136,10 @@
         justify-content: center;
     }
 
+    #navbarContainer > .progressScroll {
+        height: 0.25vh;
+    }
+
     #navbarContainer > ul > li {
         visibility: hidden;
     }
