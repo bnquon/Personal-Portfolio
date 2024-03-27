@@ -100,3 +100,48 @@
 #scrollTip > * {
     margin: 0.5rem 0 0;
 }
+
+@media screen and (max-width: 600px) {
+    #intro {
+        margin: 15vh auto 0;
+    }
+
+    #intro h1 {
+        font-size: clamp(2rem, 15vw, 20rem);
+        font-weight: 400;
+        line-height: 80%;
+    }
+    
+    #intro h3 {
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+        line-height: 150%;
+        font-size: clamp(1rem, 3vw, 20rem);
+    }
+    
+    #scrollTip {
+        transition: 350ms;
+        font-size: clamp(0.8rem, 1vw, 4rem);
+    }
+
+    #scrollTip {
+        margin: 1vh auto 0;
+    }
+
+    #navbarContainer {
+        background-color: lightblue;
+        height: 5vh;
+        width: 100vw;
+    }
+
+    #navbarContainer > ul > li {
+        visibility: hidden;
+    }
+    
+    #navbarContainer > ul > #middleNav {
+        visibility: visible;
+        font-size: clamp(1.2rem, 5vw, 4rem);
+        margin-bottom: -0.25%;
+    }
+}

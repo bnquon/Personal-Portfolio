@@ -17,8 +17,7 @@
 
 #aboutContainer > #pfp {
     margin: auto 0;
-    max-width: 22vw;
-    min-width: 175px;
+    width: 22vw;
 }
 
 #aboutContainer > #pfp img {
@@ -39,4 +38,27 @@
     font-size: clamp(0.75rem, 1vw, 2rem);
     font-weight: 400;
     line-height: 150%;
+}
+
+@media screen and (max-width: 600px) {
+    #about {
+        padding-top: 0;
+    }
+
+    #aboutContainer {
+        margin-top: 1vh;
+        flex-direction: column;
+    }
+
+    #aboutContainer > #pfp {
+        width: 60vw;
+    }
+
+    #aboutContainer > #bio {
+        width: 70%;
+    }
+
+    #aboutContainer > #bio > h1 {
+        text-align: center;
+    }
 }

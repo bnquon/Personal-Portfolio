@@ -29,3 +29,9 @@
 #bottom {
     margin-top: -1.5%;
 }
+
+@media screen and (max-width: 600px) {
+    #transition {
+        margin: 4vh 0 0;
+    }
+}

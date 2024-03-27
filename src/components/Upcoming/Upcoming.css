@@ -31,3 +31,22 @@
     font-size: clamp(0.75rem, 1vw, 5rem);
     font-weight: 200;
 }
+
+@media screen and (max-width: 600px) {
+    #upcoming {
+        padding-top: 4vh;
+    }
+
+    #upcomingGrid {
+        margin: 2vh auto 0;
+        gap: 5vh;
+        width: 80vw;
+    }
+
+    #upcomingGrid > .upcomingGrid-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

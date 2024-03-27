@@ -86,3 +86,20 @@
 #footer > a {
     cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+    #contact {
+        padding-top: 2vh;
+    }
+
+    #contactForm {
+        width: 80vw;
+        margin: 2vh auto;
+    }
+
+    #footer {
+        height: 5vh;
+        font-size: clamp(3vh, 4vh, 5vh);
+        margin-top: 4vh;
+    }
+}
