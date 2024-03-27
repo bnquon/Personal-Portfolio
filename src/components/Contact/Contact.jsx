@@ -63,8 +63,12 @@ export const Contact = () => {
       </form>
 
       <div id="footer">
-        <FontAwesomeIcon icon={faGithub}/>
-        <FontAwesomeIcon icon={faLinkedin}/>
+        <a href="https://github.com/bnquon" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faGithub}/>
+        </a>
+        <a href="https://www.linkedin.com/in/brandon-quon/" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faLinkedin}/>
+        </a>
       </div>
     </animated.div>
   );

@@ -1,10 +1,10 @@
 #upcoming {
     position: relative;
     width: 100%;
+    padding-top: 6vh;
 }
 
 #upcomingTitle {
-    margin-top: 5vh;
     text-align: center;
 }
 

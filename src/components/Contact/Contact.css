@@ -1,6 +1,6 @@
 #contact {
     position: relative;
-    margin-top: 8vh;
+    padding-top: 6vh;
     width: 100%;
     transition: 250ms;
 }
@@ -81,4 +81,8 @@
     height: clamp(5vh, 8vh, 8vh);
     font-size: clamp(3vh, 6vh, 6vh);
     color: white;
+}
+
+#footer > a {
+    cursor: pointer;
 }

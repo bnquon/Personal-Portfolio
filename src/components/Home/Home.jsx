@@ -40,16 +40,26 @@ export const Home = () => {
     }
   );
 
+  const scroll = (sectionName) => {
+    if (sectionName == 'top') {
+      window.scrollTo(0, 0);
+     } else {
+       const section = document.getElementById( `${sectionName}` );
+       section.scrollIntoView( { behavior: 'smooth' } );
+     }
+
+  };
+
   return (
     <div id="home">
 
       <animated.div id="navbarContainer" ref={ref} style={springs}>
         <ul>
-            <li>ABOUT</li>
-            <li>PROJECTS</li>
-            <li id="middleNav">BRANDON</li>
-            <li>UPCOMING</li>
-            <li>CONTACT</li>
+            <li onClick={() => scroll('about')}>ABOUT</li>
+            <li onClick={() => scroll('projects')}>PROJECTS</li>
+            <li onClick={() => scroll('top')} id="middleNav">BRANDON</li>
+            <li onClick={() => scroll('upcoming')}>UPCOMING</li>
+            <li onClick={() => scroll('contact')}>CONTACT</li>
         </ul>
         <div className="progressScroll"></div>
       </animated.div>       
