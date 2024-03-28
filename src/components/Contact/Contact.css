@@ -30,7 +30,7 @@
     border: 1px solid #d5d5d5;
     outline: 0.5px solid black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    font-size: clamp(1rem, 1vw, 3rem);
+    font-size: clamp(0.75rem, 1vw, 3rem);
     padding: clamp(0.1rem, 1vw, 2rem);
     transition: 200ms;
 }
@@ -41,7 +41,7 @@
     border: 1px solid #d5d5d5;
     outline: 0.5px solid black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    font-size: clamp(1rem, 1vw, 3rem);
+    font-size: clamp(0.75rem, 1vw, 3rem);
     padding: clamp(0.1rem, 1vw, 2rem);
 }
 
@@ -54,7 +54,7 @@
     background-color: var(--bg-color);
     color: var(--font-color);
     border-color: var(--font-color);
-    font-size: clamp(1rem, 1vw, 3rem);
+    font-size: clamp(0.75rem, 1vw, 3rem);
     padding: clamp(0.1rem, 0.75vw, 2rem);
     transition: 100ms;
 }
