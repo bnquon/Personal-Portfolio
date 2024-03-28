@@ -17,9 +17,9 @@ export const Curtain = () => {
         <>
           {isMobile ? 
             <div id='curtain'>
-                <div className="emptyCurtain" style={{transform: curtainLoaded ? 'translateY(-100%)': 'translateY(0)', transition: `${Math.random()*750 + 250}ms`}}></div>
-                <div className="emptyCurtain" style={{transform: curtainLoaded ? 'translateY(-100%)': 'translateY(0)', transition: `${Math.random()*1000 + 500}ms`}}></div>
-                <div className="emptyCurtain" style={{transform: curtainLoaded ? 'translateY(-100%)': 'translateY(0)', transition: `${Math.random()*1000 + 250}ms`}}></div>
+                <div className="emptyCurtain" style={{transform: curtainLoaded ? 'translateY(-100%)': 'translateY(0)', transition: `850ms`}}></div>
+                <div className="emptyCurtain" style={{transform: curtainLoaded ? 'translateY(-100%)': 'translateY(0)', transition: `700ms`}}></div>
+                <div className="emptyCurtain" style={{transform: curtainLoaded ? 'translateY(-100%)': 'translateY(0)', transition: `900ms`}}></div>
             </div>
           : 
             <div id='curtain'>
