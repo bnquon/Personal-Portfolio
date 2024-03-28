@@ -30,7 +30,7 @@ export const Projects = () => {
     <div id='projects'>
 
         <div id="projectsTitle">
-            <h1 style={{transform: (inView && isMobile) ? 'translateY(0)': 'translateY(100%)'}}>PROJECTS</h1>
+            <h1 style={{transform: (inView) ? 'translateY(0)': 'translateY(100%)'}}>PROJECTS</h1>
         </div>
 
         <div id="gridContainer"  ref={headerInView}>
