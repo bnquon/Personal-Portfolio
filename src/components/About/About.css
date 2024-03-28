@@ -57,7 +57,6 @@
 /* Media query for smaller screens */
 @media screen and (max-width: 650px) {
     #aboutContainer {
-        border: 1px solid red;
         margin-top: 1vh;
         flex-direction: column;
     }
