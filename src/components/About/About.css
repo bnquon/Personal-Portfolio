@@ -33,6 +33,7 @@
 }
 
 #aboutContainer > #bio > h1 {
+    transition: 700ms;
     position: relative;
     z-index: 1;
     font-size: clamp(1.25rem, 2.75vw, 4rem);
