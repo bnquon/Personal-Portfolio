@@ -5,7 +5,7 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(9, 1fr);
 }
 
 #curtain > .emptyCurtain {
@@ -18,6 +18,6 @@
 
 @media screen and (max-width: 650px) {
     #curtain {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
 }
