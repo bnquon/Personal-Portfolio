@@ -12,11 +12,12 @@ import './Projects.css';
 
 export const Projects = () => {
 
-  const [headerInView, inView] = useInView({
-    threshold: 0,
-  })
-
   const isMobile = window.innerWidth <= 650;
+  
+  const [headerInView, inView] = useInView({
+    threshold: isMobile? 0.1: 0.2,
+  })
+  
   const parallax = useParallax({
     translateY: isMobile ? [0, 0] : [0, 7.5],
   });
