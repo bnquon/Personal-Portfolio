@@ -38,7 +38,7 @@ export const Projects = () => {
 
             <div id="leftGrid" ref={parallax.ref}>
 
-                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5} scale={1.05}>
+                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5} scale={isMobile ? 1: 1.05}>
                   <a href="https://github.com/bnquon/CineVerse" target="_blank" rel="noopener noreferrer">
                     <div className="grid-item">
                       <h1>CineVerse</h1>
@@ -55,7 +55,7 @@ export const Projects = () => {
                   </a>
                 </Tilt>
 
-                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5} scale={1.08}>
+                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5} scale={isMobile ? 1: 1.05}>
                   <a href="https://github.com/wchow03/chaoshacksjs" target="_blank" rel="noopener noreferrer">
                     <div className="grid-item">
                       <h1>Asteroid Dodger (SystemsHacks)</h1>
@@ -75,7 +75,7 @@ export const Projects = () => {
 
             <div id="rightGrid" ref={rightParallax.ref}>
                 
-                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5} scale={1.08}>
+                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5} scale={isMobile ? 1: 1.05}>
                   <a href="https://github.com/bnquon/FitFolio-Local" target="_blank" rel="noopener noreferrer">
                     <div className="grid-item">
                       <h1>FitFolio</h1>
@@ -91,7 +91,7 @@ export const Projects = () => {
                   </a>
                 </Tilt>
                 
-                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5} scale={1.08}>
+                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5} scale={isMobile ? 1: 1.05}>
                   <a href="https://github.com/bnquon/Tkinter-Typing-Test" target="_blank" rel="noopener noreferrer">
                     <div className="grid-item">
                       <h1>Word Wizardry</h1>

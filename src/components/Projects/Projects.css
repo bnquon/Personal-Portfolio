@@ -124,7 +124,7 @@ a {
     }
 
     #projectsTitle > h1 {
-        transition: 750ms;
+        transition: none;
     }
 
     #gridContainer {
@@ -147,9 +147,9 @@ a {
     }
 
     .grid-item {
-        padding: 0.5rem 1rem;
-        width: 90%;
-        margin-left: 5%;
+        padding: 0.25rem 0.5rem;
+        width: 95%;
+        margin-left: 2.5%;
     }
 
     .projectImage > .linkIndicator {
