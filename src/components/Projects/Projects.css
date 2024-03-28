@@ -124,7 +124,7 @@ a {
     }
 
     #projectsTitle > h1 {
-        transition: none;
+        transition: 750ms;
     }
 
     #gridContainer {

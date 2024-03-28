@@ -31,7 +31,7 @@ export const Projects = () => {
     <div id='projects'>
 
         <div id="projectsTitle" ref={headerInView}>
-            <h1 style={{transform: (inView) ? 'translateY(0)': 'translateY(100%)'}}>PROJECTS</h1>
+            <h1 style={{transform: (inView) ? 'translateY(0)': 'translateY(300%)'}}>PROJECTS</h1>
         </div>
 
         <div id="gridContainer">
