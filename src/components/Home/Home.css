@@ -68,7 +68,7 @@
     width: fit-content;
     text-align: center;
     margin: 27.5vh auto 0;
-    transition: 300ms linear;
+    transition: 1s linear;
 }
 
 #intro > * {
@@ -91,7 +91,7 @@
 }
 
 #scrollTip {
-    transition: 350ms;
+    transition: 750ms;
     margin: 3vh auto 0;
     width: fit-content;
     text-align: center;

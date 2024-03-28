@@ -36,11 +36,9 @@ export const Home = () => {
   const [ref, springs] = useInView(
     () => ({
       from: {
-        y: -50,
         opacity: 0,
       },
       to: {
-        y: 0,
         opacity: 1,
       },
     }),
