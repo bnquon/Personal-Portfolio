@@ -15,15 +15,16 @@
 }
 
 #upcomingGrid {
-    margin: 5vh auto 0;
+    margin: 3vh auto 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8vh;
     width: 60vw;
-    transition: 250ms linear;
 }
 
 #upcomingGrid > .upcomingGrid-item {
+    position: relative;
+    transition: 500ms linear;
     display: flex;
     flex-direction: column;
     justify-content: center;

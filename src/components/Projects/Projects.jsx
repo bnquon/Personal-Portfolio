@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParallax } from "react-scroll-parallax";
+import { useInView } from 'react-intersection-observer';
 import cineverse from '../../assets/images/CineVerseHome.png'
 import fitfolio from '../../assets/images/fitfolio.png'
 import asteroid from '../../assets/images/AsteroidDodger.png'
@@ -10,6 +11,11 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import './Projects.css';
 
 export const Projects = () => {
+
+  const [headerInView, inView] = useInView({
+    threshold: 0,
+  })
+
   const isMobile = window.innerWidth <= 600;
   const parallax = useParallax({
     translateY: isMobile ? [0, 0] : [0, 7.5],
@@ -24,10 +30,10 @@ export const Projects = () => {
     <div id='projects'>
 
         <div id="projectsTitle">
-            <h1>PROJECTS</h1>
+            <h1 style={{transform: inView ? 'translateY(0)': 'translateY(100%)'}}>PROJECTS</h1>
         </div>
 
-        <div id="gridContainer">
+        <div id="gridContainer"  ref={headerInView}>
 
             <div id="leftGrid" ref={parallax.ref}>
 

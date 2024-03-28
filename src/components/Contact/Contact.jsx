@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { useInView, animated } from '@react-spring/web'
 import './Contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -7,20 +6,6 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 export const Contact = () => {
   
   const isMobile = window.innerWidth <= 600;
-
-  const [ref, springs] = useInView(
-    () => ({
-      from: {
-        opacity: 0,
-      },
-      to: {
-        opacity: 1,
-      },
-    }),
-    {
-      threshold: 0.25,
-    }
-  );
 
   const [result, setResult] = useState("");
 
@@ -48,7 +33,7 @@ export const Contact = () => {
   };
 
   return (
-    <animated.div id='contact' ref={ref} style={springs}>
+    <div id='contact'>
 
       <div id="contactTitle">
         <h1>GET IN TOUCH</h1>
@@ -72,6 +57,6 @@ export const Contact = () => {
           <FontAwesomeIcon icon={faLinkedin}/>
         </a>
       </div>
-    </animated.div>
+    </div>
   );
 }

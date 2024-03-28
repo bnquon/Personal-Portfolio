@@ -6,11 +6,13 @@
   overflow-x: hidden;
   --font-color: #070707;
   --bg-color: white;
+  --form-color: #FAF9F6;
 }
 
 [data-theme="dark"] {
   --font-color: white;
   --bg-color: #070707;
+  --form-color: #151515;
 }
 
 body {

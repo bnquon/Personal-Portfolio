@@ -5,20 +5,26 @@
 }
 
 #projectsTitle {
+    position: relative;
     text-align: center;
 }
 
 #projectsTitle > h1 {
+    position: relative;
+    transition: 750ms;
     margin: 0;
     font-size: clamp(4vw, 7vw, 20rem);
     font-weight: 400;
 }
 
 #gridContainer {
+    position: relative;
     display: flex;
     justify-content: center;
     gap: 10vw;
     padding: 2vh 0;
+    z-index: 2;
+    background-color: var(--bg-color);
 }
 
 #gridContainer > #leftGrid,

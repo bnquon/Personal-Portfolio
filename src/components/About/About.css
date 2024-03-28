@@ -1,6 +1,6 @@
 #about {
     position: relative;
-    padding-top: 10vh;
+    padding-top: 8vh;
     width: 100%;
 }
 
@@ -33,7 +33,7 @@
 }
 
 #aboutContainer > #bio > h1 {
-    transition: 700ms;
+    transition: 750ms;
     position: relative;
     z-index: 1;
     font-size: clamp(1.25rem, 2.75vw, 4rem);

@@ -1,23 +1,12 @@
 import React from 'react'
-import { useInView, animated } from '@react-spring/web'
+import { useInView } from 'react-intersection-observer'
 import './Upcoming.css'
 
 export const Upcoming = () => {
 
-  const [ref, springs] = useInView(
-    () => ({
-      from: {
-        opacity: 0,
-      },
-      to: {
-        opacity: 1,
-      },
-    }),
-    {
-      threshold: 0.1,
-      once: true,
-    }
-  );
+  const [upcomingInView, inView] = useInView({
+    threshold: 0.2,
+  })
 
   return (
     <div id='upcoming'>
@@ -25,19 +14,19 @@ export const Upcoming = () => {
             <h1>FUTURE PROJECTS</h1>
         </div>
 
-        <animated.div id="upcomingGrid" ref={ref} style={springs}>
+        <div id="upcomingGrid" ref={upcomingInView}>
 
-          <div className="upcomingGrid-item">
+          <div className="upcomingGrid-item" style={{transform: inView ? 'translateX(0)': 'translateX(-50%)', opacity: inView ? '1': '0'}}>
             <h2>Java Maven Game</h2>
             <p>2D maze game created with Maven and JUnit testing.</p>
           </div>
           
-          <div className="upcomingGrid-item">
+          <div className="upcomingGrid-item" style={{transform: inView ? 'translateX(0)': 'translateX(50%)', opacity: inView ? '1': '0'}}>
             <h2>This Website</h2>
             <p>I will be updating this website as needed and adding new features.</p>
           </div>
           
-        </animated.div>
+        </div>
     </div>
   )
 }

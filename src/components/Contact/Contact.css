@@ -2,7 +2,6 @@
     position: relative;
     padding-top: 5vh;
     width: 100%;
-    transition: 250ms;
 }
 
 #contactTitle {
@@ -23,7 +22,7 @@
     flex-direction: column;
     gap: clamp(0.5rem, 4vh, 4rem);
     border: 1px solid var(--font-color);
-    background-color: var(--font-color);
+    background-color:var(--form-color);
     padding: clamp(0.5rem, 4vh, 4rem);
 }
 
@@ -54,6 +53,7 @@
 #contactForm > button {
     background-color: var(--bg-color);
     color: var(--font-color);
+    border-color: var(--font-color);
     font-size: clamp(1rem, 1vw, 3rem);
     padding: clamp(0.1rem, 0.75vw, 2rem);
     transition: 100ms;
