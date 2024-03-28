@@ -96,7 +96,7 @@ a {
     align-items: center;
     opacity: 0;
     transition: 250ms;
-    font-size: clamp(0.5rem, 1.25vw, 2rem);
+    font-size: clamp(1rem, 1.25vw, 2rem);
 }
 
 .projectImage > .whiteBg {
@@ -115,7 +115,11 @@ a {
 
 @media screen and (max-width: 650px) {
     #projects {
-        padding-top: 2vh;
+        padding-top: 8vh;
+    }
+
+    #projectsTitle > h1 {
+        transition: 1s;
     }
 
     #gridContainer {
@@ -136,5 +140,9 @@ a {
     .grid-item {
         padding: 0.5rem 1rem;
         width: 100%;
+    }
+
+    .projectImage > .linkIndicator {
+        font-size: 3.5vw;
     }
 }

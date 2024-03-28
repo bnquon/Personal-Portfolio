@@ -15,3 +15,9 @@
     height: 100%;
     background-color: var(--font-color);
 }
+
+@media screen and (max-width: 650px) {
+    #curtain {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

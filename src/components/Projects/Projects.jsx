@@ -16,7 +16,7 @@ export const Projects = () => {
     threshold: 0,
   })
 
-  const isMobile = window.innerWidth <= 600;
+  const isMobile = window.innerWidth <= 650;
   const parallax = useParallax({
     translateY: isMobile ? [0, 0] : [0, 7.5],
   });

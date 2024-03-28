@@ -65,10 +65,12 @@
     }
 
     #aboutContainer > #bio {
+        margin-top: 4vh;
         width: 70%;
     }
 
     #aboutContainer > #bio > h1 {
         text-align: center;
+        transition: 0s;
     }
 }
