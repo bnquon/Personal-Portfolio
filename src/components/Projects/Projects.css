@@ -119,6 +119,10 @@ a {
         padding-top: 10px;
     }
 
+    #projectsTitle {
+        margin-bottom: 20px;
+    }
+
     #projectsTitle > h1 {
         transition: 750ms;
     }
@@ -135,12 +139,17 @@ a {
     #gridContainer > #rightGrid {
         width: 100%;
         display: grid;
-        gap: 1vh;
+        gap: 2vh;
+    }
+
+    #rightGrid {
+        margin-top: 2vh;
     }
 
     .grid-item {
         padding: 0.5rem 1rem;
-        width: 100%;
+        width: 90%;
+        margin-left: 5%;
     }
 
     .projectImage > .linkIndicator {

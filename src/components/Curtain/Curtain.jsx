@@ -17,11 +17,11 @@ export const Curtain = () => {
         <>
           {isMobile ? 
             <div id='curtain'>
-                <div className="emptyCurtain" style={{transform: curtainLoaded ? 'translateY(-100%)': 'translateY(0)', transition: `850ms`}}></div>
-                <div className="emptyCurtain" style={{transform: curtainLoaded ? 'translateY(-100%)': 'translateY(0)', transition: `700ms`}}></div>
-                <div className="emptyCurtain" style={{transform: curtainLoaded ? 'translateY(-100%)': 'translateY(0)', transition: `900ms`}}></div>
-                <div className="emptyCurtain" style={{transform: curtainLoaded ? 'translateY(-100%)': 'translateY(0)', transition: `700ms`}}></div>
-                <div className="emptyCurtain" style={{transform: curtainLoaded ? 'translateY(-100%)': 'translateY(0)', transition: `900ms`}}></div>
+                <div className="emptyCurtain" style={{transform: curtainLoaded ? 'translateY(-100%)': 'translateY(0)', transition: `1250ms`}}></div>
+                <div className="emptyCurtain" style={{transform: curtainLoaded ? 'translateY(-100%)': 'translateY(0)', transition: `1100ms`}}></div>
+                <div className="emptyCurtain" style={{transform: curtainLoaded ? 'translateY(-100%)': 'translateY(0)', transition: `1300ms`}}></div>
+                <div className="emptyCurtain" style={{transform: curtainLoaded ? 'translateY(-100%)': 'translateY(0)', transition: `1100ms`}}></div>
+                <div className="emptyCurtain" style={{transform: curtainLoaded ? 'translateY(-100%)': 'translateY(0)', transition: `1200ms`}}></div>
             </div>
           : 
             <div id='curtain'>
