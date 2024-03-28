@@ -76,10 +76,11 @@
     align-items: center;
     gap: clamp(3vw, 6vw, 8vw);
     width: 100%;
-    background-color: var(--font-color);
+    background-color: #070707;
     height: clamp(5vh, 8vh, 8vh);
     font-size: clamp(3vh, 6vh, 6vh);
-    color: var(--bg-color);
+    color: white;
+    border-top: 3px solid white;
 }
 
 #footer > a {
