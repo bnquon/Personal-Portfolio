@@ -17,7 +17,7 @@
 
 #aboutContainer > #pfp {
     margin: auto 0;
-    width: 22vw;
+    width: 25vw;
 }
 
 #aboutContainer > #pfp img {
@@ -28,33 +28,34 @@
 
 #aboutContainer > #bio {
     position: relative;
-    z-index: 2;
     width: 35%;
 }
 
-#aboutContainer > #bio > h1 {
-    transition: 750ms;
+#aboutContainer > #bio > #aboutHeader {
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Ensure the header stays behind the content */
+}
+
+#aboutContainer > #bio > #aboutHeader > h1 {
+    transition: transform 0.75s; /* Apply transition only to transform */
     font-size: clamp(1.25rem, 2.75vw, 4rem);
     margin: 0;
 }
 
-#aboutContainer > #bio > span{
-    position: absolute;
-    z-index: 3;
-    top: 0;
+#aboutSpan {
+    background-color: var(--bg-color);
+    position: relative;
+    z-index: 2; /* Ensure the content stays above the header */
+}
+
+#aboutContainer > #bio > #aboutSpan > span {
     font-size: clamp(0.75rem, 1vw, 2rem);
     font-weight: 400;
     line-height: 150%;
-    background-color: var(--bg-color);
 }
 
+/* Media query for smaller screens */
 @media screen and (max-width: 650px) {
-    #about {
-        padding-top: 0;
-    }
-
     #aboutContainer {
         margin-top: 1vh;
         flex-direction: column;
@@ -70,7 +71,10 @@
     }
 
     #aboutContainer > #bio > h1 {
+        transition: none; /* Remove transition on smaller screens */
+    }
+
+    #aboutContainer > #bio > #aboutHeader {
         text-align: center;
-        transition: 0s;
     }
 }

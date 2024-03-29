@@ -30,7 +30,7 @@
     border: 1px solid #d5d5d5;
     outline: 0.5px solid black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    font-size: clamp(1rem, 1vw, 3rem);
+    font-size: clamp(0.75rem, 1vw, 3rem);
     padding: clamp(0.1rem, 1vw, 2rem);
     transition: 200ms;
 }
@@ -41,7 +41,7 @@
     border: 1px solid #d5d5d5;
     outline: 0.5px solid black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    font-size: clamp(1rem, 1vw, 3rem);
+    font-size: clamp(0.75rem, 1vw, 3rem);
     padding: clamp(0.1rem, 1vw, 2rem);
 }
 
@@ -54,7 +54,7 @@
     background-color: var(--bg-color);
     color: var(--font-color);
     border-color: var(--font-color);
-    font-size: clamp(1rem, 1vw, 3rem);
+    font-size: clamp(0.75rem, 1vw, 3rem);
     padding: clamp(0.1rem, 0.75vw, 2rem);
     transition: 100ms;
 }
@@ -76,10 +76,11 @@
     align-items: center;
     gap: clamp(3vw, 6vw, 8vw);
     width: 100%;
-    background-color: var(--font-color);
+    background-color: #070707;
     height: clamp(5vh, 8vh, 8vh);
     font-size: clamp(3vh, 6vh, 6vh);
-    color: var(--bg-color);
+    color: white;
+    border-top: 3px solid white;
 }
 
 #footer > a {
@@ -92,7 +93,7 @@
     }
 
     #contactForm {
-        width: 75vw;
+        width: 60vw;
         margin: 2vh auto;
     }
 

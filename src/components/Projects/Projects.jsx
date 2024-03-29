@@ -15,7 +15,7 @@ export const Projects = () => {
   const isMobile = window.innerWidth <= 650;
   
   const [headerInView, inView] = useInView({
-    threshold: isMobile? 0.1: 0.2,
+    threshold: isMobile? 0.35: 0.5,
   })
   
   const parallax = useParallax({
@@ -30,15 +30,15 @@ export const Projects = () => {
     
     <div id='projects'>
 
-        <div id="projectsTitle">
-            <h1 style={{transform: (inView) ? 'translateY(0)': 'translateY(100%)'}}>PROJECTS</h1>
+        <div id="projectsTitle" ref={headerInView}>
+            <h1 style={{transform: (inView) ? 'translateY(0)': 'translateY(300%)'}}>PROJECTS</h1>
         </div>
 
-        <div id="gridContainer"  ref={headerInView}>
+        <div id="gridContainer">
 
             <div id="leftGrid" ref={parallax.ref}>
 
-                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5} scale={1.08}>
+                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5} scale={isMobile ? 1: 1.05}>
                   <a href="https://github.com/bnquon/CineVerse" target="_blank" rel="noopener noreferrer">
                     <div className="grid-item">
                       <h1>CineVerse</h1>
@@ -55,7 +55,7 @@ export const Projects = () => {
                   </a>
                 </Tilt>
 
-                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5} scale={1.08}>
+                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5} scale={isMobile ? 1: 1.05}>
                   <a href="https://github.com/wchow03/chaoshacksjs" target="_blank" rel="noopener noreferrer">
                     <div className="grid-item">
                       <h1>Asteroid Dodger (SystemsHacks)</h1>
@@ -75,7 +75,7 @@ export const Projects = () => {
 
             <div id="rightGrid" ref={rightParallax.ref}>
                 
-                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5} scale={1.08}>
+                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5} scale={isMobile ? 1: 1.05}>
                   <a href="https://github.com/bnquon/FitFolio-Local" target="_blank" rel="noopener noreferrer">
                     <div className="grid-item">
                       <h1>FitFolio</h1>
@@ -91,7 +91,7 @@ export const Projects = () => {
                   </a>
                 </Tilt>
                 
-                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5} scale={1.08}>
+                <Tilt tiltMaxAngleX={10} tiltMaxAngleY={12.5} scale={isMobile ? 1: 1.05}>
                   <a href="https://github.com/bnquon/Tkinter-Typing-Test" target="_blank" rel="noopener noreferrer">
                     <div className="grid-item">
                       <h1>Word Wizardry</h1>
