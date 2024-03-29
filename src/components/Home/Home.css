@@ -109,11 +109,11 @@
 
 @media screen and (max-width: 650px) {
     #intro {
-        margin: 10vh auto 0;
+        margin: 20vh auto 0;
     }
 
     #intro h1 {
-        font-size: clamp(2rem, 15vw, 20rem);
+        font-size: clamp(3rem, 17.5vw, 20rem);
         font-weight: 400;
         line-height: 80%;
     }
