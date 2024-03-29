@@ -39,9 +39,10 @@ a {
 }
 
 .grid-item {
-    padding: 0.5rem 1rem;
-    width: 35vw;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    padding: 0.5rem 0.75rem;
+    width: 36.5vw;
+    border: 3px solid var(--font-color);
+    border-radius: 20px;
 }
 
 .grid-item > * {
@@ -118,6 +119,10 @@ a {
         padding-top: 10px;
     }
 
+    #projectsTitle {
+        margin-bottom: 20px;
+    }
+
     #projectsTitle > h1 {
         transition: 750ms;
     }
@@ -134,12 +139,17 @@ a {
     #gridContainer > #rightGrid {
         width: 100%;
         display: grid;
-        gap: 1vh;
+        gap: 2vh;
+    }
+
+    #rightGrid {
+        margin-top: 2vh;
     }
 
     .grid-item {
-        padding: 0.5rem 1rem;
-        width: 100%;
+        padding: 0.25rem 0.5rem;
+        width: 95%;
+        margin-left: 2.5%;
     }
 
     .projectImage > .linkIndicator {
