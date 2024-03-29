@@ -46,6 +46,7 @@
     background-color: var(--bg-color);
     position: relative;
     z-index: 2; /* Ensure the content stays above the header */
+<<<<<<< HEAD
 }
 
 #aboutContainer > #bio > #aboutSpan > span {
@@ -54,6 +55,16 @@
     line-height: 150%;
 }
 
+=======
+}
+
+#aboutContainer > #bio > #aboutSpan > span {
+    font-size: clamp(0.65rem, 1vw, 2rem);
+    font-weight: 400;
+    line-height: 150%;
+}
+
+>>>>>>> e037b2fb31f2564af9c313169158ce0c30956988
 /* Media query for smaller screens */
 @media screen and (max-width: 650px) {
     #aboutContainer {

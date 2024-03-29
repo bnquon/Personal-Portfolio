@@ -37,11 +37,15 @@
 }
 
 #upcomingGrid > .upcomingGrid-item > h2 {
-    font-size: clamp(1rem, 1.25vw, 3rem);
+    font-size: clamp(0.8rem, 1.25vw, 3rem);
 }
 
 #upcomingGrid > .upcomingGrid-item > p {
+<<<<<<< HEAD
     font-size: clamp(0.8rem, 0.85vw, 1.5rem);
+=======
+    font-size: clamp(0.6rem, 1vw, 5rem);
+>>>>>>> e037b2fb31f2564af9c313169158ce0c30956988
     font-weight: 200;
 }
 
