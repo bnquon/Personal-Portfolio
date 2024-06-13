@@ -24,7 +24,7 @@ export const About = () => {
                 </div>
                 <div id="aboutSpan">
                   <span ref={bioView}>
-                      Hello there! I'm Brandon Quon, a second-year student at Simon Fraser University studying computer science. 
+                      Hello there! I'm Brandon Quon, a third-year student at Simon Fraser University studying computer science. 
                       I'm on an exciting journey fueled by my passion for lifelong learning and my insatiable curiosity about all things related to 
                       technology. As I continue to learn and grow, I look forward to sharing more exciting projects and improvements on this site.
                   </span>
